@@ -39,7 +39,7 @@ tl.to("#nav", {
 	   ease:"power1",
 	   duration: 2,
 	   top:"0%",
-	   delay:0.5
+	   delay:1.8
 },'one')
 
 var tl = gsap.timeline();
@@ -64,3 +64,6 @@ tl.to("#two", {
 		y:"-60%",
 },'one')
  
+
+
+
