@@ -66,9 +66,10 @@ html,body{
 /* ############ nav ############ */
 #main{
     width: 100%;
+
 }
+
 #first{
-    
     height: 140vh;
     width: 100%;
     background-color: #fff;
@@ -426,6 +427,7 @@ animation-delay: 2s;
     overflow: hidden;
     transition: transform .5s ease, height .2s ease;
     transform: scale(0);
+    z-index: 999999999;
 }
 .wrapper.active-popup{
     transform: scale(1);
@@ -570,12 +572,63 @@ animation-delay: 2s;
 }
 
 
-
-
-
-
 /* Page Transition */
 
+
+
+#marketloader{
+    height: 100%;
+    width: 100%;
+    background-color: maroon;
+    position: absolute;
+    left: -105%;
+    top: 0;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 2s;
+    z-index: 999999999;
+}
+#marketpage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f0a8a8;
+    z-index: 99999999;
+    display: flex;
+    /* pointer-events: none; */
+    transform: scale(0);
+    
+}
+#mleft {
+    height: 100%;
+    width: 40%;
+   align-items: flex-start;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+    /* background-color: #005a2a; */
+    gap: 5vh;
+}
+#mlefticon{
+    position: absolute;
+    font-size: 6vh;
+    top: 5vh;
+    left: 5vh;
+
+}
+#mleft h1{
+    font-size: 15vh;
+    cursor: pointer;
+    margin-left: 15vh;
+}
+#mright{
+
+    height: 100%;
+    width: 60%;
+    background-color: red;
+    z-index: 99999999;
+    /* position: absolute; */
+    /* position: ; */
+}
 
 
 /* ################### second ############## */
@@ -883,3 +936,20 @@ animation-delay: 2s;
     top: 7%;
     left: 87%;
 }
+
+
+/* ################# third ############### */
+
+
+/* #third{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+#third #thirdtext{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 700;
+} */

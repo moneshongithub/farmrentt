@@ -65,5 +65,36 @@ tl.to("#two", {
 },'one')
  
 
+var marketpage = document.querySelector("#marketpage")
+var market = document.querySelector("#centerdiv button")
+market.addEventListener("click",function(dets){
 
+	document.querySelector("#marketloader").style.left="0%"
+
+	setTimeout(() => {
+		document.querySelector("#marketpage").style.transform="scale(1)"
+		document.querySelector("#marketpage").style.pointerEvents="all"
+
+		  }, "2000")
+	
+
+	setTimeout(() => {
+	document.querySelector("#marketloader").style.left="100%"
+	  }, "3000")
+
+
+})
+var marketicon = document.querySelector("#mlefticon").addEventListener("click",function(icon){
+	document.querySelector("#marketloader").style.left="0%"
+	setTimeout(() => {
+		document.querySelector("#marketpage").style.transform="scale(0)"
+		document.querySelector("#marketpage").style.pointerEvents="none"
+
+		  }, "1000")
+	setTimeout(() => {
+		document.querySelector("#marketloader").style.left="-100%"
+		  }, "2000")
+		  
+
+})
 
