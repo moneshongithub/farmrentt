@@ -70,6 +70,12 @@ var market = document.querySelector("#centerdiv button")
 market.addEventListener("click",function(dets){
 
 	document.querySelector("#marketloader").style.left="0%"
+	
+	document.querySelector("#first").style.position="relative"
+	document.querySelector("#marketpage").style.height="100vh"
+	document.querySelector("#second").style.height="0"
+
+
 
 	setTimeout(() => {
 		document.querySelector("#marketpage").style.transform="scale(1)"
@@ -86,6 +92,11 @@ market.addEventListener("click",function(dets){
 })
 var marketicon = document.querySelector("#mlefticon").addEventListener("click",function(icon){
 	document.querySelector("#marketloader").style.left="0%"
+	document.querySelector("#first").style.position="initial"
+	document.querySelector("#second").style.height="100vh"
+
+	// document.querySelector("#marketpage").style.height="140vh"
+
 	setTimeout(() => {
 		document.querySelector("#marketpage").style.transform="scale(0)"
 		document.querySelector("#marketpage").style.pointerEvents="none"
@@ -98,3 +109,28 @@ var marketicon = document.querySelector("#mlefticon").addEventListener("click",f
 
 })
 
+var mlefticon = document.querySelector("#mleft .two").addEventListener("click",function(rent){
+	document.querySelector(".rent").style.transform="scale(1)"
+	document.querySelector("#buy").style.transform="scale(0)"
+	document.querySelector(".sell").style.transform="scale(0)"
+
+
+
+})
+
+var mlefticon1 = document.querySelector("#mleft .one").addEventListener("click",function(buy){
+	document.querySelector("#buy").style.transform="scale(1)"
+	document.querySelector(".rent").style.transform="scale(0)"
+	document.querySelector(".sell").style.transform="scale(0)"
+
+
+
+})
+
+var mlefticon2 = document.querySelector("#mleft .three").addEventListener("click",function(sell){
+	document.querySelector(".sell").style.transform="scale(1)"
+	document.querySelector("#buy").style.transform="scale(0)"
+	document.querySelector(".rent").style.transform="scale(0)"
+
+
+})
