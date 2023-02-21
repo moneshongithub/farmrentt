@@ -90,6 +90,34 @@ market.addEventListener("click",function(dets){
 
 
 })
+
+
+var marketnav = document.querySelector("#bc")
+marketnav.addEventListener("click",function(dets){
+
+	document.querySelector("#marketloader").style.left="0%"
+	
+	document.querySelector("#first").style.position="relative"
+	document.querySelector("#marketpage").style.height="100vh"
+	document.querySelector("#second").style.height="0"
+
+
+
+	setTimeout(() => {
+		document.querySelector("#marketpage").style.transform="scale(1)"
+		document.querySelector("#marketpage").style.pointerEvents="all"
+
+		  }, "2000")
+	
+
+	setTimeout(() => {
+	document.querySelector("#marketloader").style.left="100%"
+	  }, "3000")
+
+
+})
+
+
 var marketicon = document.querySelector("#mlefticon").addEventListener("click",function(icon){
 	document.querySelector("#marketloader").style.left="0%"
 	document.querySelector("#first").style.position="initial"

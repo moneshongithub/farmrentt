@@ -596,7 +596,7 @@ animation-delay: 2s;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #f0a8a8;
+    background-color: #fff  ;
     z-index: 99999999;
     display: flex;
     /* pointer-events: none; */
@@ -812,15 +812,43 @@ input[type=submit] {
 }
 
 #imagebox{
-    background-color: #016a70;
     height: 60%;
     width: 90%;
-    position: absolute;
     left: 5%;
+    position: relative;
+}
+#imagebox img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
 }
 #textbox{
+    height: 38%;
+    width: 90%;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    /* padding: 2vh; */
 
 }
+#textbox h5, h6{
+    font-size: 2.2vh;
+    margin: 3px;
+
+}
+#textbox button{
+    /* padding: 0.4vh; */
+    padding: 7px;
+    border-radius: 20px;
+    margin-top: 6px;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    background-color: #007436;
+    color: #fff;
+}
+
+
 
 
 /* ################### second ############## */
