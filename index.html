@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
 </head>
 
 <body>
@@ -117,7 +119,12 @@
 
 <!-- ############## marketplace $############ -->
             
-<div id="marketloader"></div>
+<div id="marketloader">
+      <!-- <div class="page-loader">
+            <div class="spinner"></div>
+            	<div class="txt">Farm.Rent</div>
+        </div>  -->
+</div>
 <div id="marketpage">
 
     <div id="mleft">
@@ -451,18 +458,93 @@
         </div>
 
 
-        <!-- <div id="third">
+        <div id="third">
             <div id="thirdtext">
                 <h1>Testimonials From Our Users</h1>
                 <p>People globally are using Homebird to organise the clutter in their lives.</p>
             </div>
-        </div> -->
+           <!-- TESTIMONIALS -->
+           <div id="slides">
+            <div class="slidebox">
+                <div id="slideboxleft">
+                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </div>
+                <div id="slideboxright">
+                    <p>
+                        "I kept losing details for local tradespeople so Homebird finally lets me store their details in one place. Love it."
+                    </p>
+                </div>
+            </div>
+
+            <div class="slidebox">
+                <div id="slideboxleft">
+                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </div>
+                <div id="slideboxright">
+                    <p>
+                        "I kept losing details for local tradespeople so Homebird finally lets me store their details in one place. Love it."
+                    </p>
+                </div>
+            </div>
+            
+           </div>
 
     </div>
+<hr>
+
+    <!-- ############### fourth ############### -->
+
+    <div id="fourth">
+        <h1>Contact Us</h1>
+        <p>Get in touch </p>
+        
+        <div id="contactus">
+            <div id="contactimg">
+               
+                <img src="./images/beam-woman-sitting-at-desk-and-programming.gif" alt="">
+            </div>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">India</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </div>
+        <div class="Social-media">
+            <a href="#"><font color="#007cc4"><i class="fab fa-facebook"></i></font></a>
+            <a href="#"><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+            <a href="#"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+            <a href="#"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
+          </div>
+        
+    </div>
+    
+</div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+
     <script src="script.js"></script>
+
 </body>
 
 </html>

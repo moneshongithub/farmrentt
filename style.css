@@ -8,6 +8,7 @@ html,body{
     height:100%;
     /* position: relative; */
    font-family: Gilroy;
+   
 
 }
 
@@ -286,8 +287,9 @@ html,body{
 }
 #centerdiv h1{
     font-size: 75px;
-    font-weight: 800;
-    font-family: monospace;
+    font-weight: 600;
+    font-family: inherit;
+    color: #000000ea;
     
 }
 #centerdiv p{
@@ -326,7 +328,6 @@ html,body{
   animation-fill-mode: forwards;
   width: 1220px;
   /* -moz-box-shadow: 0 0 150px #1d5333;
--webkit-box-shadow: 0 0 150px #1d5333;
 box-shadow: 0 0 150px #1d5333; */
 border-radius: 5%;
 box-shadow: -8px 10px 15px 0 rgb(94 94 94 / 44%);
@@ -583,14 +584,21 @@ animation-delay: 2s;
 #marketloader{
     height: 100%;
     width: 100%;
-    background-color: maroon;
+    background: linear-gradient(to bottom right,rgb(3, 58, 3), rgb(47, 196, 47),rgb(4, 91, 43));
     position: absolute;
     left: -105%;
     top: 0;
     transition: cubic-bezier(0.19, 1, 0.22, 1);
-    transition-duration: 2s;
+    transition-duration: 1.5s;
     z-index: 999999999;
-
+    
+        /* width: 100%;
+        height: 100vh;
+        position: absolute;
+        background: #272727;
+        /* z-index: 10; */
+        /* z-index: 999999999; */
+     
 }
 #marketpage{
     position: absolute;
@@ -612,18 +620,21 @@ animation-delay: 2s;
    flex-direction: column;
     /* background-color: #005a2a; */
     gap: 5vh;
+    
 }
 #mlefticon{
     position: absolute;
     font-size: 6vh;
     top: 5vh;
     left: 5vh;
+    cursor: pointer;
 
 }
 #mleft h1{
     font-size: 15vh;
     cursor: pointer;
     margin-left: 15vh;
+    /* color:; */
 }
 #mright{
 
@@ -787,6 +798,7 @@ input[type=submit] {
     margin-bottom: 2vh;
     margin-top: -3vh;
     font-family: serif;
+    opacity: 1;
 }    
 #buytop{
     /* background-color: red; */
@@ -809,6 +821,7 @@ input[type=submit] {
     text-align: center;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
     position: relative;
+    
 }
 
 #imagebox{
@@ -880,6 +893,7 @@ input[type=submit] {
     font-size: 46px;
     line-height: 1.2;
     font-weight: 700;
+    opacity: 1;
 
 }
 #second p{
@@ -890,6 +904,8 @@ input[type=submit] {
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 0.7px;
+    opacity: 1;
+
 }
 #secbg{
     height: 100%;
@@ -1107,15 +1123,232 @@ input[type=submit] {
 }/* ################# third ############### */
 
 
-/* #third{
+#third{
     height: 100vh;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #aba7a7; */
 }
 #third #thirdtext{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* font-size: 23px; */
+    line-height: 1.2;
+    /* font-weight: 700; */
+}
+#thirdtext h1{
+
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 46px;
     line-height: 1.2;
     font-weight: 700;
-} */
+    opacity: 1;
+
+
+}
+#thirdtext p{
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #6d6d6d;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    opacity: 1;
+
+}
+#slides{
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+.slidebox{
+   height: 300px;
+   width: 500px;
+   background-color: rgb(199, 203, 207);
+   border-radius: 20px;
+   display: flex;
+   background-color: antiquewhite;
+   overflow: hidden;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   opacity: 1;
+  
+}
+#slideboxleft img{
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+}
+#slideboxright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    width: 300px;
+
+}
+
+
+
+/* ################# fourth ####################/ */
+
+#fourth{
+    height: 120vh;
+    width: 100%;
+    /* background-color: #005a2a; */
+    position: relative;
+}
+#fourth>h1{
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 700;
+    opacity: 1;
+
+
+}
+#fourth>p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #6d6d6d;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    opacity: 1;
+    
+}
+
+#contactus{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+#contactimg{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    
+}
+#contactimg img{
+    width: 70%;
+    height: 90%;
+    /* background-color: red;    */
+}
+
+
+#fourth input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #c0a7a7; 
+    background-color: #e4e4e4;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  #fourth input[type=submit] {
+    background-color: #1f7f11;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  #fourth input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 45px 200px 0px 0;
+  }
+
+/* ################## social media ############ */
+	
+ 
+  .Social-media{
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .Social-media a{
+    display: flex;
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,124,196,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0, 124, 196, 0);
+    transition: transform 0.5s
+  }
+  .Social-media a i{
+    font-size: 20px;
+    color:#777;
+    transition: transform 0.5s;
+  }
+  .Social-media a:hover{
+    box-shadow:inset 4px 4px 6px -2px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 124, 196, 0.1);
+    transform: translateY(2px);
+  }
+  .Social-media a:hover i{
+    transform: scale(0.90);
+  }
+  .Social-media a:hover .fa-facebook{
+    color: #3b5998;
+  }
+  .Social-media a:hover .fa-twitter{
+    color: #00acee;
+  }
+  .Social-media a:hover .fa-whatsapp{
+    color: #4fce5d;
+  }
+  .Social-media a:hover .fa-instagram{
+    color: #f14843;
+  }
+  .Social-media a:hover .fa-youtube{
+    color: #f00;
+  }
+
+::-webkit-scrollbar{
+    display: none;
+}
