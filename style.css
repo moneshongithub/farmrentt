@@ -9,7 +9,7 @@ html,body{
     /* position: relative; */
    font-family: Gilroy;
    
-
+   scroll-behavior: smooth;
 }
 
 .txt{
@@ -581,75 +581,12 @@ animation-delay: 2s;
 
 
 
-#marketloader{
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom right,rgb(3, 58, 3), rgb(47, 196, 47),rgb(4, 91, 43));
-    position: absolute;
-    left: -105%;
-    top: 0;
-    transition: cubic-bezier(0.19, 1, 0.22, 1);
-    transition-duration: 1.5s;
-    z-index: 999999999;
-    
-        /* width: 100%;
-        height: 100vh;
-        position: absolute;
-        background: #272727;
-        /* z-index: 10; */
-        /* z-index: 999999999; */
-     
-}
-#marketpage{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #fff  ;
-    z-index: 99999999;
-    display: flex;
-    /* pointer-events: none; */
-    transform: scale(0);
-    
-}
-#mleft {
-    height: 100%;
-    width: 40%;
-   align-items: flex-start;
-   justify-content: center;
-   display: flex;
-   flex-direction: column;
-    /* background-color: #005a2a; */
-    gap: 5vh;
-    
-}
-#mlefticon{
-    position: absolute;
-    font-size: 6vh;
-    top: 5vh;
-    left: 5vh;
-    cursor: pointer;
-
-}
-#mleft h1{
-    font-size: 15vh;
-    cursor: pointer;
-    margin-left: 15vh;
-    /* color:; */
-}
-#mright{
-
-    height: 100%;
-    width: 60%;
-    z-index: 99999999;
-    padding: 5vh;
-    position: relative
-    /* position: ; */
-}
 .rent>h2{
     font-size: 7vh;
     text-align: center;
-    margin: 3vh 0;
+    margin-bottom: 5vh;
     font-family: serif;
+    /* background-color: #4e4242; */
 }
 #rentsteps{
     display: flex;
@@ -715,14 +652,22 @@ input[type=submit] {
   
   .rent {
     margin: auto;
-    width: 90%;
+    width: 60%;
     border-radius: 5px;
-    background-color: #ededed;
-    padding: 20px;
+    background-color: #ffffff;
     font-family: 'Work Sans', sans-serif;
     /* display: flex; */
-    position: absolute;
-    transform: scale(0);
+    /* position: absolute; */
+    transform: scale(1);
+  }
+  #rent1{
+    padding: 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0.562);
+    border-radius: 4px;
+    height: 70vh;
+    width: 100%;
+    background-color: #ededed;
+
   }
   .rentparent{
     display: flex;
@@ -730,12 +675,14 @@ input[type=submit] {
   }
   .rentleft{
     /* border: 1px solid red; */
-    width: 50%;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 3%;
     /* margin: 2vh; */
    
   }
   .rentright{
-    width: 50%;
+    width: 48%;
 
   }
   
@@ -743,16 +690,25 @@ input[type=submit] {
 
   .sell{
     margin: auto;
-    width: 90%;
+    width: 100%;
+    height: 100vh;
     border-radius: 5px;
-    background-color: #ededed;
-    padding: 20px;
-    position: absolute;
-    top: 13%;
-    left: 6%;
-    transform: scale(0);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   opacity: 1;
+    transform: scale(1);
     font-family: 'Work Sans', sans-serif;
-    
+    /* background-color: red; */
+  }
+  
+  #sell1{
+    border: 1px solid rgba(0, 0, 0, 0.562);
+    padding: 7vh;
+    background-color: #ededed;
+    opacity: 1;
   }
 .sellparent{
     display: flex;
@@ -776,26 +732,35 @@ input[type=submit] {
   .sell>h2{
     font-size: 7vh;
     text-align: center;
-    margin: 3vh 0;
+    /* margin-top: 3vh; */
     font-family: serif;
+    opacity: 1;
+    margin-bottom: 25px;
+}
+.sellright #country{
+    width: 90%;
+} 
+.sell form{
+    transform: scale(1);
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 
   /* ############ buy ############## */
 
 #buy{
-    height: 90%;
+    height: 120vh;
     width: 100%;
-    position: absolute;
-    top: 5%;
-    right: 2%;
-    transform: scale(0);
-
+    padding: 7%;
+        /* position: absolute; */
+        /* left: 5%; */
+/* background-color: red; */
     
 }
 #buy>h2{
     font-size: 7vh;
     text-align: center;
-    margin-bottom: 2vh;
+    margin-bottom: 8vh;
     margin-top: -3vh;
     font-family: serif;
     opacity: 1;
@@ -806,6 +771,7 @@ input[type=submit] {
     width: 100%;
     display: flex;
     gap: 5%;
+    margin-bottom: 15px;
 }
 #buybot{
     width: 100%;
@@ -821,7 +787,6 @@ input[type=submit] {
     text-align: center;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
     position: relative;
-    
 }
 
 #imagebox{
@@ -833,7 +798,21 @@ input[type=submit] {
 #imagebox img{
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
+    /* transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 1s; */
+
+}
+#imagebox:hover{
+    transform: scale(0.95);
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 1s;
+}
+.buybox:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 99%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 1s;   
+
 }
 #textbox{
     height: 38%;
@@ -859,6 +838,7 @@ input[type=submit] {
     border: none;
     background-color: #007436;
     color: #fff;
+    cursor: pointer;
 }
 
 
@@ -1130,7 +1110,7 @@ input[type=submit] {
 }
 #third #thirdtext{
     width: 100%;
-    height: 45%;
+    height: 35%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1162,7 +1142,7 @@ input[type=submit] {
 
 }
 #slides{
-    height: 55%;
+    height: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1171,10 +1151,9 @@ input[type=submit] {
 .slidebox{
    height: 300px;
    width: 500px;
-   background-color: rgb(199, 203, 207);
+   background-color: rgb(213, 241, 242);
    border-radius: 20px;
    display: flex;
-   background-color: antiquewhite;
    overflow: hidden;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
    opacity: 1;
@@ -1351,4 +1330,24 @@ input[type=submit] {
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+
+
+@media(max-width:500px){
+    #first{
+        /* font-size: 1vh; */
+        width: 100%;
+        padding: 20px;
+        height: 100vh;
+    }  
+    #nav{
+        width: 100%;
+    }
+    #navmid{
+        display: none;
+    }
+    #navend{
+        display: none;
+    }
 }

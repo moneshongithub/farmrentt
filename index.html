@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farm.Rent</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -14,16 +15,16 @@
 </head>
 
 <body>
-
+    
     <div id="main">
 
-        <!-- <div class="page-loader">
+        <div class="page-loader">
             <div class="spinner"></div>
             	<div class="txt">Farm.Rent</div>
 
-        </div>  -->
+        </div> 
 
-        <div id="first">
+        <div id="first">    
 
 
 
@@ -49,10 +50,10 @@
                 </div>
                 <div id="navend">
                     <a href="#">Home</a>
-                    <a href="#">About</a>
+                    <a  href="#buy">Marketplace</a>
+                    <a href="#fourth">ContactUs</a>
 
 
-                    <a id="bc" href="#">Marketplace</a>
                     <!-- <div class="menu-icon">
 
                         <div class="menu-list">
@@ -91,7 +92,8 @@
                     </div>
                     <h1 class="hanim">for the profession of hope</h1>
                     <p class="hanim  ">Farm.Rent tends to make your life easier!</p>
-                    <button class=" hanim ">Marketplace</button>
+                    <button onclick="window.location.href='#buy';"
+                     class="hanim">Marketplace</button>
                 </div>
 
                 <div id="centerimage">
@@ -119,11 +121,11 @@
 
 <!-- ############## marketplace $############ -->
             
-<div id="marketloader">
-      <!-- <div class="page-loader">
+<!-- <div id="marketloader">
+      <div class="page-loader">
             <div class="spinner"></div>
             	<div class="txt">Farm.Rent</div>
-        </div>  -->
+        </div> 
 </div>
 <div id="marketpage">
 
@@ -137,198 +139,13 @@
     </div>
     <div id="mright">
 
-        <div id="buy">
-            <h2>Buy Farm Produce</h2>
-            
-          <div id="buytop">
-            <div class="buybox">
-                <div id="imagebox">
-                    <img src="https://www.agrowala.com/theme/images/product/img_1987554854_1495018716.jpg" alt="">
-                </div>
-                <div id="textbox">
-                    <h5>Roound Tomatoes</h5>
-                    <p>3000 seeds</p>
-                    <h6>Rs.300</h6>
-                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
-                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
-                </div>
-
-            </div>
-            <div class="buybox">
-                 <div id="imagebox">
-                    <img src="https://www.agrowala.com/theme/images/product/img_16351370641403141156.webp" alt="">
-                 </div>
-                <div id="textbox">
-                    <h5>Organic Fertilizer</h5>
-                    <p>25 ML</p>
-                    <h6>Rs.165</h6>
-                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
-                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
-                </div>
-            </div>
-            <div class="buybox">
-                 <div id="imagebox">
-                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/p3_540x.png?v=1620751253" alt="">
-                 </div>
-                <div id="textbox">
-                    <h5>Pioneer agro</h5>
-                    <p>Bio fungicide</p>
-                    <h6>Rs.535</h6>
-                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
-                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
-                </div>
-            </div>
-          </div>
-          <div id="buybot">
-            <div class="buybox">
-                 <div id="imagebox">
-                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/PP43i_9d4a8b58-36ec-427f-841c-6af64d2938fb_540x.png?v=1637148676" alt="">
-                 </div>
-                <div id="textbox">
-                    <h5>PT-439 plus tractor</h5>
-                    <p>Escorts</p>
-                    <h6>Rs.300</h6>
-                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
-                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
-                </div>
-            </div>
-            <div class="buybox">
-                 <div id="imagebox">
-                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/BS-25_360x.jpg?v=1607164057" alt="">
-                 </div>
-                <div id="textbox">
-                    <h5>Garden Sprayer</h5>
-                    <p>snap private limited</p>
-                    <h6>Rs.4800</h6>
-                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
-                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
-                </div>
-            </div>
-            <div class="buybox">
-                 <div id="imagebox">
-                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/v10-removebg-preview_540x.png?v=1642967119" alt="">
-                 </div>
-                <div id="textbox">
-                       <h5>Chaff cutter</h5>
-                    <p>Vinspire agrotech</p>
-                    <h6>Rs.14000</h6>
-                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
-                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
-                </div>
-            </div>
-          </div>
-        </div>
-
-
-
-<!-- ##############  rent  ################ -->
-
-
-
-
-        <div class="rent">
-            <h2>Farm Equipment Rental</h2>
-            <hr>
-            <div id="rentsteps">
-            <h1>1</h1><p>select your requirement</p>
-            <h1>2</h1><p>connect with renter </p>
-            <h1>3</h1><p>get device at ypur door</p>
- </div>
- <form action="">
-    
-    
-  <div class="rentparent">
-    <div class="rentleft">
-        <select id="country" name="country">
-            <option value="">Select Category*
-            </option>
-            <option value="germany">Tractor</option>
-            <option value="italy">Rotavator</option>
-            <option value="spain">Harvester</option>
-            <option value="uk">Balers</option>
-          </select>
-    
-        
-        <select id="country" name="country">
-            <option value="france">State</option>
-            <option value="germany">Madhya Pradesh</option>
-          </select>
-    
-        <select id="country" name="country">
-          <option value="france">Block</option>
-          <option value="germany">Bhopal</option>
-          
-        </select>
-       </div>
-       <div class="rentright">
-        <select id="country" name="country">
-            <option value="france">District</option>
-            <option value="germany">Bhopal</option>
-          </select>
-
-        <select id="country" name="country">
-            <option value="france">Village/Town</option>
-            <option value="germany">Mandideep</option>
-            <option value="germany">Misrood</option>
-            
-          </select>
-    
-        <select id="country" name="country">
-          <option value="france">Select Implement Specification</option>
-      
-        </select>
-       </div>
-  </div>
-  
-    <input type="submit" value="Submit">
-  </form>
-        </div>
-
-
-<!-- ############# sell ########## -->
-
-  <div class="sell">
-            <h2>Enter Your Product Details</h2>
-            <hr>
-        
- <form action="">  
-    
-  <div class="sellparent">
-    <div class="sellleft">
-       <h4>upload and drap image</h4>
-       </div>
-       <div class="sellright">
-        <label for="product">*Product Category</label>
-        <select id="country" name="country">
-            <option value="france">Select 
-                An Option
-            </option>
-            <option value="germany">Cropes</option>
-            <option value="germany">Vegetables</option>
-            <option value="germany">Fruits</option>
-            <option value="germany">Flowers</option>
-          </select>
-          <br>
-
-        <label for="product">*Product Name</label>
-        <input type="text" placeholder="Enter Product Name ">
-    
-        <label for="product">*About Farm</label>
-        <input type="text">
-
-       </div>
-  </div>
-  
-    <input type="submit" value="Submit">
-  </form>
-        </div>
-
+       
 
 
     </div>
 
 
-</div>
+</div> -->
 
             <!-- ####### login #######33 -->
 
@@ -411,13 +228,229 @@
             </div>
 
         </div>
+        <!-- ################ buy ###################
+        -->
+        <div id="buy">
+            <h2>Buy Farm products</h2>
+            
+          <div id="buytop">
+            <div class="buybox">
+                <div id="imagebox">
+                   <img src=https://cdn.shopify.com/s/files/1/0722/2059/products/NPK-30_280x.jpg?v=1607176728 alt="">
+                </div>
+               <div id="textbox">
+                   <h5>Neptune Water Pump</h5>
+                   <p>NPK 30</p>
+                   <h6>Rs.1400</h6>
+                   <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                   <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+               </div>
+            </div> 
+            <div class="buybox">
+                <div id="imagebox">
+                    <img src="https://www.agrowala.com/theme/images/product/img_1987554854_1495018716.jpg" alt="">
+                </div>
+                <div id="textbox">
+                    <h5>Roound Tomatoes</h5>
+                    <p>3000 seeds</p>
+                    <h6>Rs.300</h6>
+                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+                </div>
+
+            </div>
+            
+            <div class="buybox">
+                 <div id="imagebox">
+                    <img src="https://www.agrowala.com/theme/images/product/img_16351370641403141156.webp" alt="">
+                 </div>
+                <div id="textbox">
+                    <h5>Organic Fertilizer</h5>
+                    <p>25 ML</p>
+                    <h6>Rs.165</h6>
+                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+                </div>
+            </div>
+            <div class="buybox">
+                 <div id="imagebox">
+                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/p3_540x.png?v=1620751253" alt="">
+                 </div>
+                <div id="textbox">
+                    <h5>Pioneer agro</h5>
+                    <p>Bio fungicide</p>
+                    <h6>Rs.535</h6>
+                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+                </div>
+            </div>
+            
+          </div>
+          <div id="buybot">
+            <div class="buybox">
+                <div id="imagebox">
+                   <img src="https://cdn.shopify.com/s/files/1/0920/8638/products/coragen-removebg-preview_233x342.png?v=1627557442" alt="">
+                </div>
+               <div id="textbox">
+                   <h5>Coragen</h5>
+                   <p>300 ML</p>
+                   <h6>Rs.1900</h6>
+                   <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                   <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+               </div>
+           </div>
+            <div class="buybox">
+                 <div id="imagebox">
+                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/PP43i_9d4a8b58-36ec-427f-841c-6af64d2938fb_540x.png?v=1637148676" alt="">
+                 </div>
+                <div id="textbox">
+                    <h5>PT-439 plus tractor</h5>
+                    <p>Escorts</p>
+                    <h6>Rs.300</h6>
+                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+                </div>
+            </div>
+            <div class="buybox">
+                 <div id="imagebox">
+                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/BS-25_360x.jpg?v=1607164057" alt="">
+                 </div>
+                <div id="textbox">
+                    <h5>Garden Sprayer</h5>
+                    <p>snap private limited</p>
+                    <h6>Rs.4800</h6>
+                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+                </div>
+            </div>
+            <div class="buybox">
+                 <div id="imagebox">
+                    <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/v10-removebg-preview_540x.png?v=1642967119" alt="">
+                 </div>
+                <div id="textbox">
+                       <h5>Chaff cutter</h5> 
+                    <p>Vinspire agrotech</p>
+                    <h6>Rs.14000</h6>
+                    <button> <i class="ri-shopping-bag-fill"></i> Buy now</button>
+                    <button> <i class="ri-shopping-cart-fill"></i> Add to cart </button>
+                </div>
+            </div>
+            
+
+
+
+            
+          </div>
+        </div>
+<!-- ################# sell ################### -->
+<div class="sell">
+    <h2>SELL</h2>
+    <h2>Enter Your Product Details</h2>
+
+    <div id="sell1">
+
+
+<form action="">  
+
+<div class="sellparent">
+<div class="sellleft">
+<h4>upload and drap image</h4>
+</div>
+<div class="sellright">
+<label for="product">*Product Category</label>
+<select id="country" name="country">
+    <option value="france">Select 
+        An Option
+    </option>
+    <option value="germany">Cropes</option>
+    <option value="germany">Vegetables</option>
+    <option value="germany">Fruits</option>
+    <option value="germany">Flowers</option>
+  </select>
+  <br>
+
+<label for="product">*Product Name</label>
+<input type="text" placeholder="Enter Product Name ">
+
+<label for="product">*About Farm</label>
+<input type="text">
+
+</div>
+</div>
+
+<input type="submit" value="Submit">
+</form>
+</div>
+</div>
+
+<!-- ############ rent ############## -->
+<div class="rent">
+    <h2>Farm Equipment Rental</h2>
+    <div id="rent1">
+    <div id="rentsteps">
+    <h1>1</h1><p>select your requirement</p>
+    <h1>2</h1><p>connect with renter </p>
+    <h1>3</h1><p>get device at ypur door</p>
+</div>
+<form action="">
+
+
+<div class="rentparent">
+<div class="rentleft">
+<select id="country" name="country">
+    <option value="">Select Category*
+    </option>
+    <option value="germany">Tractor</option>
+    <option value="italy">Rotavator</option>
+    <option value="spain">Harvester</option>
+    <option value="uk">Balers</option>
+  </select>
+
+
+<select id="country" name="country">
+    <option value="france">State</option>
+    <option value="germany">Madhya Pradesh</option>
+  </select>
+
+<select id="country" name="country">
+  <option value="france">Block</option>
+  <option value="germany">Bhopal</option>
+  
+</select>
+</div>
+<div class="rentright">
+<select id="country" name="country">
+    <option value="france">District</option>
+    <option value="germany">Bhopal</option>
+  </select>
+
+<select id="country" name="country">
+    <option value="france">Village/Town</option>
+    <option value="germany">Mandideep</option>
+    <option value="germany">Misrood</option>
+    
+  </select>
+
+<select id="country" name="country">
+  <option value="france">Select Implement Specification</option>
+
+</select>
+</div>
+</div>
+
+<input type="submit" value="Submit">
+</form>
+</div>
+</div>
+
+
 
 
         <div id="second">
             
             <div id="sectext">
                 <h1>Store and organise, easily....</h1>
-            <p>The Homebird app gives you one, simple place to store information about the  contents of your home, services your home uses, local tradespeople and more.</p>
+            <p>The  app gives you one, simple place to buy, sell and rent your equipments .</p>
             </div>
 
           <div id="secbg">
@@ -461,28 +494,29 @@
         <div id="third">
             <div id="thirdtext">
                 <h1>Testimonials From Our Users</h1>
-                <p>People globally are using Homebird to organise the clutter in their lives.</p>
+                <p>People globally are using Farm.Rent to organise the clutter in their farming.</p>
             </div>
            <!-- TESTIMONIALS -->
            <div id="slides">
             <div class="slidebox">
                 <div id="slideboxleft">
-                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <img src="https://images.unsplash.com/photo-1609252509102-aa73ff792667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                 </div>
                 <div id="slideboxright">
                     <p>
-                        "I kept losing details for local tradespeople so Homebird finally lets me store their details in one place. Love it."
+                        "I faced many problems during my farming but Farm.Rent helps me. It allowed me to order equipment from the comfort of my home."
                     </p>
                 </div>
             </div>
 
             <div class="slidebox">
                 <div id="slideboxleft">
-                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <img src="https://images.unsplash.com/photo-1628492058844-589eb5dc6a35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80" alt="">
                 </div>
                 <div id="slideboxright">
                     <p>
-                        "I kept losing details for local tradespeople so Homebird finally lets me store their details in one place. Love it."
+                        "In Farm.Rent i can order equipments according to my need.
+                        It helped me a lot."
                     </p>
                 </div>
             </div>
@@ -532,7 +566,7 @@
             <a href="#"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
           </div>
         
-    </div>
+    </div> -->
     
 </div>
 
@@ -540,6 +574,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
   
 
